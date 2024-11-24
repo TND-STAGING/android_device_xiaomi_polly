@@ -15,7 +15,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     FILESYSTEM_TYPE_system=erofs \
     POSTINSTALL_OPTIONAL_system=true
     
-    # Vendor
+ # Vendor
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=vendor/bin/otapreopt_script \
@@ -29,7 +29,6 @@ PRODUCT_PACKAGES += \
     
 # The app "/system/bin/bootctl" doesn't currently exist in custom recoveries, so running it currently does nothing. So we added this.
 RECOVERY_BINARY_SOURCE_FILES += $(TARGET_OUT_EXECUTABLES)/bootctl
-
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
